@@ -1,4 +1,4 @@
-package com.example.testflutttercache
+package com.example.testflutttercache.utils
 
 import android.os.Handler
 import android.os.Looper
@@ -11,12 +11,15 @@ object EventChannelUtil {
     private lateinit var connectionStreamHandler: ConnectionStreamHandler
 
     fun register(registrar: BinaryMessenger) {
-        connectionStreamHandler = ConnectionStreamHandler()
+        connectionStreamHandler =
+            ConnectionStreamHandler()
         connectionEventChannel = EventChannel(
             registrar,
             "navigateParams"
         )
-        connectionEventChannel.setStreamHandler(connectionStreamHandler)
+        connectionEventChannel.setStreamHandler(
+            connectionStreamHandler
+        )
     }
 
     fun senRouteName(routeName: String, fromActivity: String) {

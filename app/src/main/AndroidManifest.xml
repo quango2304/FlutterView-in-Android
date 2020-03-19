@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MyFlutterActivity"></activity>
-        <activity android:name=".MainActivity3" />
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".AndroidActivity3" />
+        <activity android:name=".AndroidActivity2" />
+        <activity android:name=".AndroidActivity1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
